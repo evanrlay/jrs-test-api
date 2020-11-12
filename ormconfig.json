@@ -1,0 +1,24 @@
+{
+   "type": "mysql",
+   "host": "localhost",
+   "port": 3306,
+   "username": "jrs",
+   "password": "jrs",
+   "database": "jrs-sample",
+   "synchronize": true,
+   "logging": false,
+   "entities": [
+      "entity/*.ts"
+   ],
+   "migrations": [
+      "migration/**/*.ts"
+   ],
+   "subscribers": [
+      "subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "entity",
+      "migrationsDir": "migration",
+      "subscribersDir": "subscriber"
+   }
+}
